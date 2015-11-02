@@ -6,7 +6,7 @@ var launched_count = 0;
         document.addEventListener("deviceready", onDeviceReady, false);
 		console.log("device ready");
     }
-	
+	//event handlers
 	function updateDisplay() {
 		$("#launched").text("Application launched: " + launched_count);
 		$("#resumed").text("Application paused: " + paused_count);
@@ -16,6 +16,7 @@ var launched_count = 0;
 
     // device APIs are available
     //
+    //Lifecycle events captured here
     function onDeviceReady() {
 		alert("device ready");
         
